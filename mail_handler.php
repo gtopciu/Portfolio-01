@@ -1,19 +1,15 @@
 <?php
-	if(isset($_POST['submit'])){
+
+	if(isset($_POST['submit'])) {
 		$name=$_POST['name'];
-		$email=$_POST['email'];
-		$msg=$_POST['msg'];
+		$subject=$_POST['subject'];
+		$email=$_POST['mail'];
+		$msg=$_POST['message'];
 
-		$to='lostglory15@gmail.com'; 
-		$subject='Form Submission';
-		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
-		$headers="From: ".$email;
+		$mailTo='lostglory15@gmail.com'; 
+        $headers = "From: ".$mailFrom;
+        $txt = "You have received an E-mail from ".$name.".\n\n".$message;
 
-		if(mail($to, $subject, $message, $headers)){
-			echo "<h1>Sent Successfully! Thank you"." ".$name.", I will reply to you shortly!</h1>";
-		}
-		else{
-			echo "Something went wrong!";
-		}
-	}
+mail($mailTo, $subject, $txt, $headers);
+header("Location: index.php?mailsend");
 ?>

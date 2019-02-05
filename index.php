@@ -424,10 +424,21 @@
             <div class="input-group input-group-lg">
               <div class="input-group-prepend">
                 <span class="input-group-text bg-danger text-white">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+              </div>
+              <textarea name="subject" type="text" type class="form-control bg-dark text-white" placeholder="Subject"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-danger text-white">
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input name="email" type="email" class="form-control bg-dark text-white" placeholder="Email">
+              <input name="email" type="mail" class="form-control bg-dark text-white" placeholder="Email">
             </div>
           </div>
 
@@ -438,9 +449,10 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea name="msg" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+              <textarea name="message" type="text" class="form-control bg-dark text-white" placeholder="Message"></textarea>
             </div>
           </div>
+
           <input name ="submit" type="submit" value="submit" class="btn btn-danger btn-block btn-lg">
         </form>
       </div>
