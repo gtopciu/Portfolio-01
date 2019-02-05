@@ -408,7 +408,7 @@
       <div class="card card-body py-5">
         <h3>Get In Touch</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos illo, dicta id voluptates enim.</p>
-        <form action="mail_handler.php" method="post" name="form">
+        <form action="mail_handler.php" method="post">
           <div class="form-group">
             <div class="input-group input-group-lg">
               <div class="input-group-prepend">
@@ -416,18 +416,7 @@
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input name="name" type="text" class="form-control bg-dark text-white" placeholder="Name">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-danger text-white">
-                  <i class="fas fa-pencil-alt"></i>
-                </span>
-              </div>
-              <textarea name="subject" type="text" type class="form-control bg-dark text-white" placeholder="Subject"></textarea>
+              <input type="text" name="name" placeholder="Name" class="form-control bg-dark text-white">
             </div>
           </div>
 
@@ -438,7 +427,7 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input name="email" type="mail" class="form-control bg-dark text-white" placeholder="Email">
+              <input  type="text" name="mail" placeholder="Email" class="form-control bg-dark text-white" >
             </div>
           </div>
 
@@ -449,11 +438,12 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea name="message" type="text" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+              <textarea name="subject" placeholder="Subject" class="form-control bg-dark text-white"></textarea>
             </div>
           </div>
 
-          <input name ="submit" type="submit" value="submit" class="btn btn-danger btn-block btn-lg">
+
+          <button name ="submit" type="submit"  class="btn btn-danger btn-block btn-lg"></button>
         </form>
       </div>
     </div>
